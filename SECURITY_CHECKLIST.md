@@ -42,7 +42,7 @@ This checklist ensures you don't accidentally upload sensitive financial data to
 ```bash
 # Check for hard-coded passwords
 grep -r "password.*=" *.py
-grep -r "55833148" *.py  # Your specific password
+grep -r "09444722" *.py  # Your specific password
 grep -r "第一銀行" *.py  # Bank name
 
 # Should return no results!
@@ -68,7 +68,7 @@ Ensure scripts use environment variables:
 password = os.getenv('PDF_PASSWORD')
 
 # ❌ BAD (insecure)
-password = "55833148"
+password = "09444722"
 ```
 
 ### **4. Test with Sample Data**
