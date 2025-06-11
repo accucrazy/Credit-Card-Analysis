@@ -1,0 +1,132 @@
+# ================================================
+# The Pocket Company by Accucrazy
+# Security .gitignore for Credit Card Analyzer
+# ================================================
+
+# SENSITIVE FINANCIAL DATA - DO NOT COMMIT
+# ==========================================
+
+# Bank statements and financial documents
+*.pdf
+第一銀行電子對帳單*.pdf
+
+# Real transaction data (explicitly listed to avoid blocking samples)
+transactions.csv
+clean_transactions.csv
+saas_transactions.csv
+
+# Analysis reports with real data
+*_report.txt
+*_analysis_report.txt
+clean_credit_card_report.txt
+saas_analysis_report.txt
+
+# Charts and visualizations with real data
+*.png
+!sample_*.png              # Allow sample charts
+!demo_*.png                # Allow demo charts
+
+# Backup files with sensitive data
+*.backup
+*.bak
+*_backup.*
+
+# Personal configuration files
+config.json
+settings.json
+.env
+.env.local
+.env.production
+
+# PYTHON DEVELOPMENT
+# ===================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# TEMPORARY FILES
+# ================
+temp/
+tmp/
+*.tmp
+*.log
+
+# SAMPLE DATA (ALLOWED)
+# =====================
+# These files are OK to commit as they contain demo data
+# Note: These are already allowed by the ! rules above
+demo_*.csv
+example_*.csv 
